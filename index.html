@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVerse - Modern Tech Blog</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- Enhanced Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#home">
+                <i class="bi bi-hexagon-fill text-primary me-2"></i>TechVerse
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" href="#home"><i class="bi bi-house-door me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#articles"><i class="bi bi-journal-text me-1"></i> Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#categories"><i class="bi bi-grid me-1"></i> Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#about"><i class="bi bi-people me-1"></i> About</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline-light btn-sm rounded-pill px-4" href="#search">
+                            <i class="bi bi-search me-1"></i> Search
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Enhanced Hero Section -->
+    <section id="home" class="hero-section text-center position-relative">
+        <div class="container position-relative">
+            <span class="badge bg-light text-dark mb-3 px-4 py-2">Welcome to the Future of Tech</span>
+            <h1 class="display-2 fw-bold mb-4">Discover. Learn. Innovate.</h1>
+            <p class="lead mb-5 fs-4">Dive into the world of cutting-edge technology, web development, and digital innovation</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <button class="btn btn-light btn-lg px-5 rounded-pill shadow-lg">
+                    <i class="bi bi-rocket-takeoff me-2"></i>Explore Now
+                </button>
+                <button class="btn btn-outline-light btn-lg px-5 rounded-pill">
+                    <i class="bi bi-play-circle me-2"></i>Watch Demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <div class="container my-5">
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-card">
+                    <i class="bi bi-file-text fs-1 mb-3"></i>
+                    <h3 class="fw-bold mb-0">500+</h3>
+                    <p class="mb-0">Articles</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <i class="bi bi-people fs-1 mb-3"></i>
+                    <h3 class="fw-bold mb-0">50K+</h3>
+                    <p class="mb-0">Readers</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <i class="bi bi-star-fill fs-1 mb-3"></i>
+                    <h3 class="fw-bold mb-0">4.9/5</h3>
+                    <p class="mb-0">Rating</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                    <i class="bi bi-award fs-1 mb-3"></i>
+                    <h3 class="fw-bold mb-0">25+</h3>
+                    <p class="mb-0">Awards</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Bar Section -->
+    <div id="search" class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="input-group input-group-lg shadow-sm">
+                    <input type="text" class="form-control search-bar border-end-0" placeholder="Search articles, tutorials, guides...">
+                    <button class="btn btn-gradient" type="button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories Section -->
+    <div id="categories" class="container my-5">
+        <h2 class="text-center mb-5 section-title">Browse by Category</h2>
+        <div class="text-center">
+            <a href="#" class="category-chip"><i class="bi bi-code-slash me-2"></i>Web Development</a>
+            <a href="#" class="category-chip"><i class="bi bi-palette me-2"></i>UI/UX Design</a>
+            <a href="#" class="category-chip"><i class="bi bi-robot me-2"></i>AI & Machine Learning</a>
+            <a href="#" class="category-chip"><i class="bi bi-phone me-2"></i>Mobile Apps</a>
+            <a href="#" class="category-chip"><i class="bi bi-cloud me-2"></i>Cloud Computing</a>
+            <a href="#" class="category-chip"><i class="bi bi-shield-check me-2"></i>Cybersecurity</a>
+        </div>
+    </div>
+
+    <!-- Featured Article -->
+    <div class="container my-5">
+        <h2 class="text-center mb-5 section-title">Featured Story</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="card featured-card shadow-lg">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <img src="https://picsum.photos/600/400?random=1" class="img-fluid h-100 object-fit-cover" alt="Featured">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body p-5">
+                                <div class="mb-3">
+                                    <span class="badge badge-custom bg-primary me-2"><i class="bi bi-star-fill me-1"></i>Featured</span>
+                                    <span class="badge badge-custom bg-success">Web Development</span>
+                                </div>
+                                <h2 class="card-title fw-bold mb-3">The Complete Guide to Modern Web Development in 2025</h2>
+                                <p class="card-text text-muted fs-5 mb-4">Discover the latest trends, tools, and techniques that are shaping the future of web development. From progressive web apps to AI-powered interfaces, learn everything you need to stay ahead in the industry.</p>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="https://ui-avatars.com/api/?name=John+Doe&background=667eea&color=fff&size=40" class="author-avatar me-3" alt="Author">
+                                    <div>
+                                        <div class="fw-bold">John Doe</div>
+                                        <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>Oct 1, 2025 • <i class="bi bi-clock me-1"></i>12 min read</small>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-gradient btn-lg">
+                                    Read Full Article <i class="bi bi-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest Articles Grid -->
+    <div id="articles" class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-5">
+            <h2 class="section-title mb-0">Trending Articles</h2>
+            <a href="#" class="btn btn-outline-primary rounded-pill">View All <i class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow position-relative">
+                    <span class="trending-badge"><i class="bi bi-fire me-1"></i>TRENDING</span>
+                    <img src="https://picsum.photos/400/250?random=2" class="card-img-top" alt="CSS">
+                    <div class="card-body d-flex flex-column p-4">
+                        <span class="badge badge-custom bg-success mb-3 align-self-start">CSS</span>
+                        <h5 class="card-title fw-bold mb-3">Mastering CSS Grid and Flexbox: A Visual Guide</h5>
+                        <p class="card-text text-muted flex-grow-1">Learn to create stunning layouts with modern CSS techniques. Perfect for beginners and pros alike.</p>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top">
+                            <div class="d-flex align-items-center">
+                                <img src="https://ui-avatars.com/api/?name=Sarah+Kim&background=764ba2&color=fff&size=30" class="author-avatar me-2" alt="Sarah">
+                                <small class="fw-bold">Sarah Kim</small>
+                            </div>
+                            <small class="text-muted"><i class="bi bi-clock me-1"></i>5 min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow">
+                    <img src="https://picsum.photos/400/250?random=3" class="card-img-top" alt="JavaScript">
+                    <div class="card-body d-flex flex-column p-4">
+                        <span class="badge badge-custom bg-warning text-dark mb-3 align-self-start">JavaScript</span>
+                        <h5 class="card-title fw-bold mb-3">Advanced JavaScript: ES6+ Features You Must Know</h5>
+                        <p class="card-text text-muted flex-grow-1">Unlock the full potential of modern JavaScript with these essential ES6+ features and patterns.</p>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top">
+                            <div class="d-flex align-items-center">
+                                <img src="https://ui-avatars.com/api/?name=Mike+Chen&background=667eea&color=fff&size=30" class="author-avatar me-2" alt="Mike">
+                                <small class="fw-bold">Mike Chen</small>
+                            </div>
+                            <small class="text-muted"><i class="bi bi-clock me-1"></i>8 min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow">
+                    <img src="https://picsum.photos/400/250?random=4" class="card-img-top" alt="Responsive">
+                    <div class="card-body d-flex flex-column p-4">
+                        <span class="badge badge-custom bg-info text-dark mb-3 align-self-start">Design</span>
+                        <h5 class="card-title fw-bold mb-3">Building Mobile-First Responsive Websites</h5>
+                        <p class="card-text text-muted flex-grow-1">Create beautiful, responsive designs that work flawlessly across all devices and screen sizes.</p>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top">
+                            <div class="d-flex align-items-center">
+                                <img src="https://ui-avatars.com/api/?name=Emma+Wilson&background=f093fb&color=fff&size=30" class="author-avatar me-2" alt="Emma">
+                                <small class="fw-bold">Emma Wilson</small>
+                            </div>
+                            <small class="text-muted"><i class="bi bi-clock me-1"></i>6 min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow position-relative">
+                    <span class="trending-badge"><i class="bi bi-fire me-1"></i>TRENDING</span>
+                    <img src="https://picsum.photos/400/250?random=5" class="card-img-top" alt="React">
+                    <div class="card-body d-flex flex-column p-4">
+                        <span class="badge badge-custom bg-danger mb-3 align-self-start">React</span>
+                        <h5 class="card-title fw-bold mb-3">React Hooks Deep Dive: useState to useContext</h5>
+                        <p class="card-text text-muted flex-grow-1">Transform your React development with hooks. Learn when and how to use each hook effectively.</p>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top">
+                            <div class="d-flex align-items-center">
+                                <img src="https://ui-avatars.com/api/?name=Alex+Turner&background=4facfe&color=fff&size=30" class="author-avatar me-2" alt="Alex">
+                                <small class="fw-bold">Alex Turner</small>
+                            </div>
+                            <small class="text-muted"><i class="bi bi-clock me-1"></i>10 min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow">
+                    <img src="https://picsum.photos/400/250?random=6" class="card-img-top" alt="Performance">
+                    <div class="card-body d-flex flex-column p-4">
+                        <span class="badge badge-custom bg-secondary mb-3 align-self-start">Performance</span>
+                        <h5 class="card-title fw-bold mb-3">Web Performance: From Slow to Lightning Fast</h5>
+                        <p class="card-text text-muted flex-grow-1">Proven strategies to optimize your website and deliver blazing-fast user experiences.</p>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top">
+                            <div class="d-flex align-items-center">
+                                <img src="https://ui-avatars.com/api/?name=Lisa+Park&background=00f2fe&color=fff&size=30" class="author-avatar me-2" alt="Lisa">
+                                <small class="fw-bold">Lisa Park</small>
+                            </div>
+                            <small class="text-muted"><i class="bi bi-clock me-1"></i>7 min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow">
+                    <img src="https://picsum.photos/400/250?random=7" class="card-img-top" alt="Accessibility">
+                    <div class="card-body d-flex flex-column p-4">
+                        <span class="badge badge-custom bg-dark mb-3 align-self-start">Accessibility</span>
+                        <h5 class="card-title fw-bold mb-3">Web Accessibility: Design for Everyone</h5>
+                        <p class="card-text text-muted flex-grow-1">Build inclusive websites that provide great experiences for users of all abilities.</p>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top">
+                            <div class="d-flex align-items-center">
+                                <img src="https://ui-avatars.com/api/?name=David+Lee&background=43e97b&color=fff&size=30" class="author-avatar me-2" alt="David">
+                                <small class="fw-bold">David Lee</small>
+                            </div>
+                            <small class="text-muted"><i class="bi bi-clock me-1"></i>9 min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <div id="about" class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="newsletter-section shadow-lg text-white text-center">
+                    <i class="bi bi-envelope-heart fs-1 mb-4"></i>
+                    <h2 class="fw-bold mb-3">Join 50,000+ Tech Enthusiasts</h2>
+                    <p class="fs-5 mb-4">Get weekly insights, tutorials, and exclusive content delivered to your inbox</p>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="input-group input-group-lg shadow-lg">
+                                <input type="email" class="form-control border-0" placeholder="Enter your email address" style="border-radius: 50px 0 0 50px;">
+                                <button class="btn btn-dark btn-lg px-4 fw-bold" type="button" style="border-radius: 0 50px 50px 0;">
+                                    Subscribe <i class="bi bi-send ms-2"></i>
+                                </button>
+                            </div>
+                            <small class="d-block mt-3 opacity-75">No spam. Unsubscribe anytime.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row g-4 pb-4">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="fw-bold mb-4 text-white">
+                        <i class="bi bi-hexagon-fill text-primary me-2"></i>TechVerse
+                    </h4>
+                    <p class="text-white-50 mb-4 pe-3" style="line-height: 1.8;">Empowering developers and tech enthusiasts with quality content, tutorials, and insights into the ever-evolving world of technology.</p>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <a href="#" class="footer-icon text-white" title="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="footer-icon text-white" title="Twitter">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a href="#" class="footer-icon text-white" title="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="footer-icon text-white" title="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="#" class="footer-icon text-white" title="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4 text-white">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a href="#home" class="text-white-50 text-decoration-none hover-link d-inline-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2 text-primary"></i>Home
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#articles" class="text-white-50 text-decoration-none hover-link d-inline-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2 text-primary"></i>Articles
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#categories" class="text-white-50 text-decoration-none hover-link d-inline-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2 text-primary"></i>Categories
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#about" class="text-white-50 text-decoration-none hover-link d-inline-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2 text-primary"></i>About Us
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#contact" class="text-white-50 text-decoration-none hover-link d-inline-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2 text-primary"></i>Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4 text-white">Popular Topics</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a href="#categories" class="text-white-50 text-decoration-none hover-link d-inline-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2 text-primary"></i>Web Development
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#categories" class="text-white-50 text-decoration-none hover-link d-inline-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2 text-primary"></i>Mobile Apps
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#categories" class="text-white-50 text-decoration-none hover-link d-inline-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2 text-primary"></i>UI/UX Design
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#categories" class="text-white-50 text-decoration-none hover-link d-inline-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2 text-primary"></i>Cloud & DevOps
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#categories" class="text-white-50 text-decoration-none hover-link d-inline-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2 text-primary"></i>AI & ML
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="contact" class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4 text-white">Get In Touch</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <div class="d-flex align-items-start text-white-50">
+                                <i class="bi bi-geo-alt-fill me-3 text-primary mt-1"></i>
+                                <span>Kolkata, India</span>
+                            </div>
+                        </li>
+                        <li class="mb-3">
+                            <a href="mailto:shubhadipdas733@gmail.com" class="text-white-50 text-decoration-none hover-link d-flex align-items-center">
+                                <i class="bi bi-envelope-fill me-3 text-primary"></i>
+                                <span>shubhadipdas733@gmail.com</span>
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="tel:+91 9432351677" class="text-white-50 text-decoration-none hover-link d-flex align-items-center">
+                                <i class="bi bi-telephone-fill me-3 text-primary"></i>
+                                <span>+91 9432351677</span>
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <div class="d-flex align-items-center text-white-50">
+                                <i class="bi bi-clock-fill me-3 text-primary"></i>
+                                <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4 opacity-25">
+            
+            <div class="row align-items-center py-3">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="text-white-50 mb-0">
+                        <i class="bi bi-c-circle me-1"></i> 2025 <span class="text-white fw-semibold">TechVerse</span>. All rights reserved. Built with <i class="bi bi-heart-fill text-danger mx-1"></i> and <span class="text-primary fw-semibold">Bootstrap 5</span>
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white-50 text-decoration-none me-3 hover-link">Privacy Policy</a>
+                    <span class="text-white-50">•</span>
+                    <a href="#" class="text-white-50 text-decoration-none mx-3 hover-link">Terms of Service</a>
+                    <span class="text-white-50">•</span>
+                    <a href="#" class="text-white-50 text-decoration-none ms-3 hover-link">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-gradient position-fixed bottom-0 end-0 m-4 rounded-circle shadow-lg" style="width: 50px; height: 50px; display: none; z-index: 1000;">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
